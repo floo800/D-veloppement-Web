@@ -1,0 +1,196 @@
+html{
+box-sizing:border-box;
+}
+
+*,*:before , *:after {
+  box-sizing:inherit;
+}
+
+body {
+  background-image: url("../img/fondSite.jpeg");
+
+  margin: 0 8%;
+
+}
+
+nav{
+  background: #7B9BA6;
+  display: flex;
+  height : 3em;
+  line-height: calc(3em -10px);//que si seul et hauteur fixe
+  font-size: 1.2em;
+}
+
+nav ul{
+  margin:0;
+  padding: 0;
+
+}
+
+nav ul.right{
+  margin-left:auto;
+}
+
+nav ul li{
+  margin : 0;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid black;
+  height : 100%;
+  padding: .5em .5em;
+
+}
+
+nav ul li:hover{
+  background-color: #6B6BCF;
+  cursor: pointer;
+}
+
+
+div.hero{
+    background-image: url(../img/fond.jpeg);
+    font-size: 3em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.infos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #75EB83;
+}
+
+.infos-ctn{
+  margin:0;
+  width: 10%;
+  border: 2px solid black;
+  width: 48%;
+}
+
+.infos-ctn h2 {
+  text-align: center;
+}
+
+
+.infos-ctn form {
+  text-align: center;
+}
+
+
+input {
+  width: 10em;
+}
+
+
+.infos h2{
+  margin: 0;
+}
+
+.main {
+  background-color: #828C84;
+  display : flex;
+  flex-wrap: wrap;
+}
+
+.triage {
+  display: flex;
+  justify-content: space-around;
+  background-color: #17B0E3;
+
+  padding: 0.2em
+}
+
+#episodes {
+  width: 70%;
+}
+
+
+
+#episodes img {
+  height: 300px;
+  width : 300px;
+  border: 5px solid white;
+}
+
+#episodes h4 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#episodes input {
+  width: 30%
+}
+
+#episodes a {
+  display: block;
+
+}
+
+#episodes .commentaireInput{
+  width : 50%;
+  height : 100px;
+}
+
+.episode-ctn {
+  padding : 1em 2em 1em 2em;
+  border: 2px solid black;
+}
+
+#avancement {
+  width : 30%;
+  border: 2px solid black;
+}
+
+#avancement h4 {
+  margin: 0;
+  text-decoration: underline;
+}
+#avancement .serie-ctn {
+  padding : 1em 2em 1em 2em;
+  border-bottom: 2px solid black
+}
+
+.hidden {
+  display : none;
+}
+
+.show {
+  display : block;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    margin: 0;
+  }
+  div.hero{
+      background-image: url(../img/fond.jpeg);
+      font-size: 2em;
+      padding: .5em;
+      text-align: center;
+  }
+
+}
+
+@media screen and (max-width : 480px) {
+
+
+  .infos-ctn{
+    margin:0;
+    border: 2px solid red;
+    width: 100%;
+  }
+
+  #episodes {
+    width: 100%;
+  }
+  #episodes img {
+    height: 100%;
+    width : 100%;
+    border: 5px solid white;
+  }
+
+  #avancement {
+    width : 100%;
+  }
+}

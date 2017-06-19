@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Naruto FanSub</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul class="left">
+                <li>Acceuil</li>
+                <li>Projet</li>
+            </ul>
+
+            <ul class="right">
+                <li>Se connecter</li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Naruto Fan Sub</h1>
+        </div>
+
+        <!- info  connexion et news->
+        <div class="infos">
+            <div class="infos-ctn">
+                <h2>Se connecter</h2>
+                <form action="#" method="post">
+                  <input type="pseudo" name="pseudo" placeholder="Pseudo"/><br>
+                  <input type="password" name="mot_de_passe" placeholder="Mot de passe"/><br>
+                  <input type="submit" value="Valider" class="id" />
+                </form>
+            </div>
+            <div class="infos-ctn">
+                <h2>News</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit.  Donec hendrerit
+                    tempor tellus.  Donec pretium posuere tellus.
+                    Proin quam nisl, tincidunt et, mattis eget,
+                    convallis nec, purus.  Cum sociis natoque
+
+                  </p>
+                </div>
+            </div>
+        </div>
+                  <!- FIN info  connexion et news->
+        <div class="triage">
+          <form id="Trie" onsubmit="a.TrieSerie(event,this)">
+            <select id="ordre">
+              <option value="chronologique">Chronologique</option>
+              <option value="antiChronologique">Anti-chronologique</option>
+            </select>
+            <select id="date">
+              <option value="tous"> Tous</option>
+              <option value="semaine">Semaine</option>
+              <option value="mois">Mois</option>
+              <option value="annee">Annee</option>
+            </select>
+
+            <input type="text" name="texte" placeholder="Titre à rechercher"/>
+            <input type="submit" value="Valider" class="trie" />
+          </form >
+
+        </div>
+                  <!- EPISODE ->
+        <div class="main">
+            <div id="episodes">
+
+            </div>
+
+                  <!- FIN EPISODE ->
+                  <!- AVANCEMENT ->
+
+
+            <div id="avancement">
+            </div>
+                  <!-FIN AVANCEMENT ->
+        </div>
+              <p>Bouton d'administration </p>
+              <input type="checkbox" onClick="a.switchAdmin(this.checked) , avancement.switchAdmin(this.checked)" >
+        <script type="text/javascript" src="assets/js/babel.min.js"></script>
+       <script type="text/javascript" data-presets="es2015,stage-2" src="assets/js/app2.js"></script>
+       <script type="text/javascript" data-presets="es2015,stage-2" src="assets/js/avancement.js"></script>
+    </body>
+</html>
